@@ -22,11 +22,7 @@ body {
   background-color: var(--white-background);
 }
 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+
 
 /* ----------------------------------- Reset ----------------------------------- */
 
@@ -72,16 +68,12 @@ button {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .page-header-nav-list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
-}
-
-.page-header-nav-list-item {
-  padding: 24px 0;
 }
 
 .page-header-nav-list-item > a:hover, 
@@ -125,7 +117,12 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: flex;
+  margin-right: 76px;
+}
+
+.page-header-nav-list-link {
+  display: inline-block;
+  padding: 24px 0;
 }
 
 .page-header-nav-list-link,
@@ -141,11 +138,13 @@ button {
 .section {
   padding: 120px 0;
 }
+
 .main {
   line-height: 150%;
 }
 
 .main-section {
+  padding: 188px 0;;
   background-color: #2e2f42;
 }
 
@@ -159,15 +158,23 @@ button {
   line-height: 107%;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  text-align: center;
-  padding: 68px 331px 0;
-
-}
-.button-container {
+  max-width: 496px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 .body-container {
   min-height: 100vh;
@@ -177,20 +184,21 @@ button {
 
 .main-section-button {
   font-family: "Roboto", sans-serif;
-  background-color: var(--primary-brand);
+  display: block;
+  background-color: #4d5ae5;
   color: #ffffff;
   letter-spacing: 0.04em;
   font-weight: 500;
   cursor: pointer;
   line-height: 24px;
   border-radius: 4px;
-  border-width: 0;
-
-  padding: 16px 32px;
+  border: none;
+  height: 56px;
+  min-width: 169px;
+  margin: 0 auto;
+  padding: 0;
   margin-top: 48px;
-  margin-bottom: 68px;
-
-} 
+}
 
 .main-section-button:hover,
 .main-section-button:focus {
@@ -221,6 +229,7 @@ button {
   line-height: 120%;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .main-qualities-list-item-text {
@@ -228,7 +237,6 @@ button {
   line-height: 150%;
   color: #434455;
   letter-spacing: 0.02em;
-  margin-top: 8px;
 }
 
 .main-team {
@@ -332,15 +340,15 @@ button {
   background-color: #2e2f42;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  padding: 100px 0;
 }
 
 .footer-container {
-  padding: 100px 0;
   margin-left: 156px;
 }
 
 .page-footer a {
-  /* display: block; */
+  display: inline-block;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.17;
@@ -355,3 +363,8 @@ button {
   color: #f4f4fd;
 }
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
