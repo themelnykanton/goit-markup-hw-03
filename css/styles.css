@@ -260,19 +260,23 @@ button {
   margin-bottom: 72px;
 }
 
-.main-team-list-item {
+.main-team-list-card-content {
+  padding: 32px 16px;
   background-color: var(--white-background);
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+/* .main-team-list-item {
+  background-color: var(--white-background);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+} */
 
 .main-team-list-item-header {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 32px;
 }
 
 .main-team-list-item-text {
