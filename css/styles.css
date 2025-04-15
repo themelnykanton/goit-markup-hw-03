@@ -260,11 +260,18 @@ button {
   margin-bottom: 72px;
 }
 
+.main-team-list-item {
+  border-radius: 0 0 4px 4px;
+  box-shadow: 
+    0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
 .main-team-list-card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
   background-color: var(--white-background);
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .main-team-list-item-header {
@@ -301,17 +308,12 @@ button {
 }
 
 .main-portfolio-list-item {
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
   flex-basis: calc((100% - (2 * 24px)) / 3);
   border-bottom: 1px solid var(--accent);
   border-left: 1px solid var(--accent);
   border-right: 1px solid var(--accent);
   background-color: var(--white-background);
-}
-
-.main-portfolio-list-item-header,
-.main-portfolio-list-item-text {
-  padding-left: 8px;
 }
 
 .main-portfolio-list-item:nth-last-child(-n+3) {
@@ -324,8 +326,6 @@ button {
   line-height: 1.2;
   color: #2e2f42;
   letter-spacing: 0.02em;
-
-  margin-top: 32px;
 }
 
 .main-portfolio-list-item-text {
@@ -334,6 +334,10 @@ button {
 
   margin-top: 8px;
 
+}
+
+.main-portfolio-list-card-content {
+  padding: 32px 16px;
 }
 
 .page-footer {
